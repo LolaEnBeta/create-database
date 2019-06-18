@@ -18,3 +18,9 @@ query = conn.cursor()
 
 #Create arguments
 arguments = (name, age)
+
+#Create query
+sql = """
+INSERT INTO users (name, age)
+VALUES (?, ?)
+"""
