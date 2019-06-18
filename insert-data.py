@@ -9,3 +9,9 @@ try:
 except ValueError:
     print("This value is not a number")
     exit()
+
+#Create connection to database
+conn = sqlite3.connect("***/***.db")
+
+#Create cursor
+query = conn.cursor()
