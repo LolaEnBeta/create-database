@@ -24,3 +24,9 @@ sql = """
 INSERT INTO users (name, age)
 VALUES (?, ?)
 """
+
+#Execute query
+if (query.execute(sql, arguments)):
+    print("Record saved successfully")
+else:
+    print("An error has ocurred")
