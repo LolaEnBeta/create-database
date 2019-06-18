@@ -30,3 +30,12 @@ if (query.execute(sql, arguments)):
     print("Record saved successfully")
 else:
     print("An error has ocurred")
+
+#Close cursor
+query.close()
+
+#Save changes
+conn.commit()
+
+#Close connection
+conn.close()
