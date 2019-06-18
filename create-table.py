@@ -21,3 +21,12 @@ if (query.execute(sql)):
     print("Table created successfully")
 else:
     print("An error has ocurred")
+
+#Close route
+query.close()
+
+#Save changes
+conn.commit()
+
+#Close connection
+conn.close()
