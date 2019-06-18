@@ -15,3 +15,9 @@ CREATE TABLE users
     age INTEGER
     )
 """
+
+#Execute query
+if (query.execute(sql)):
+    print("Table created successfully")
+else:
+    print("An error has ocurred")
