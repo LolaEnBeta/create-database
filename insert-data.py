@@ -15,3 +15,6 @@ conn = sqlite3.connect("***/***.db")
 
 #Create cursor
 query = conn.cursor()
+
+#Create arguments
+arguments = (name, age)
