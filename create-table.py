@@ -8,11 +8,11 @@ query = conn.cursor()
 
 #Writte a query
 sql = """
-CREATE TABLE users
+CREATE TABLE IF NOT EXISTS users
     (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name VARCHAR (10),
-    age INTEGER
+    id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    name VARCHAR (10) NOT NULL,
+    age INTEGER NOT NULL
     )
 """
 
